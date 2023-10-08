@@ -1,0 +1,69 @@
+import java.awt.*;
+import java.awt.event.*;
+
+/**
+ *
+ * Description
+ *
+ * @version 1.0 from 15.04.2023
+ * @author 
+ */
+
+public class nz extends Frame {
+  // start attributes
+  private TextField textField1 = new TextField();
+  private Button bDunuttensohn1 = new Button();
+  // end attributes
+  
+  public nz() { 
+    // Frame init
+    super();
+    addWindowListener(new WindowAdapter() {
+      public void windowClosing(WindowEvent evt) { dispose(); }
+    });
+    int frameWidth = 300;
+    int frameHeight = 300;
+    setSize(frameWidth, frameHeight);
+    Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
+    int x = (d.width - getSize().width) / 2;
+    int y = (d.height - getSize().height) / 2;
+    setLocation(x, y);
+    setTitle("nz");
+    setResizable(false);
+    Panel cp = new Panel(null);
+    add(cp);
+    // start components
+    
+    textField1.setBounds(0, 16, 281, 105);
+    textField1.setText("du nutten sohn");
+    cp.add(textField1);
+    bDunuttensohn1.setBounds(24, 144, 209, 73);
+    bDunuttensohn1.setLabel("Du nutten sohn");
+    bDunuttensohn1.addActionListener(new ActionListener() { 
+      public void actionPerformed(ActionEvent evt) { 
+        bDunuttensohn1_ActionPerformed(evt);
+      }
+    });
+    cp.add(bDunuttensohn1);
+    // end components
+    
+    setVisible(true);
+  } // end of public nz
+  
+  // start methods
+  
+  public static void main(String[] args) {
+    new nz();
+  } // end of main
+  
+  public void bDunuttensohn1_ActionPerformed(ActionEvent evt) {
+  int getpreis = eingabe.Nextint();
+    
+    getPreis + 3;
+    
+    // TODO add your code here
+    
+  } // end of bDunuttensohn1_ActionPerformed
+
+  // end methods
+} // end of class nz

@@ -1,0 +1,67 @@
+object FGUIForm: TFGUIForm
+  Left = 988
+  Top = 170
+  BorderIcons = [biSystemMenu]
+  Caption = 'nz'
+  ClientHeight = 261
+  ClientWidth = 284
+  Color = clWhite
+  ParentFont = True
+  FormStyle = fsStayOnTop
+  OldCreateOrder = True
+  Position = poDesigned
+  Visible = True
+  OnCanResize = FormCanResize
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnMouseActivate = FormMouseActivate
+  OnResize = FormResize
+  FrameType = 2
+  Modified = False
+  Resizable = False
+  Undecorated = False
+  Background = clWhite
+  PixelsPerInch = 96
+  TextHeight = 15
+  object textField1: TATextField
+    Tag = -2
+    Left = 0
+    Top = 16
+    Width = 281
+    Height = 105
+    Cursor = crIBeam
+    Hint = 'textField1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = []
+    Foreground = 3355443
+    Background = clWhite
+    JavaType = 'TextField'
+    Focusable = True
+    Text = 'du nutten sohn'
+    Editable = True
+  end
+  object bDunuttensohn1: TAButton
+    Tag = -4
+    Left = 24
+    Top = 144
+    Width = 209
+    Height = 73
+    Hint = 'button1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = []
+    Foreground = clBlack
+    Background = 15658734
+    JavaType = 'Button'
+    Focusable = True
+    Text = 'Du nutten sohn'
+    actionPerformed = 'bDunuttensohn1_ActionPerformed'
+  end
+  object GNUgettextMarker: TGnuGettextComponentMarker
+  end
+end
